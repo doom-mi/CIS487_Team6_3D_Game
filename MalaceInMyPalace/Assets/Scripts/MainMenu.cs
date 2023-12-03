@@ -14,12 +14,7 @@ public class MainMenu : MonoBehaviour
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 
-    public void Settings()
-    {
-        // call to go to setting scene
-        UnityEngine.Debug.Log("Navigating to Settings Scene");
-
-    }
+   
 
     public void Quit()
     {
