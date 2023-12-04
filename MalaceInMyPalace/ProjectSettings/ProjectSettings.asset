@@ -661,7 +661,7 @@ PlayerSettings:
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
   cloudServicesEnabled:
-    Collab: 1
+    Collab: 0
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -678,7 +678,7 @@ PlayerSettings:
   cloudProjectId: 1b40dbd2-86bf-4024-8185-d54108baecbd
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
+  projectName: MalaceInMyPalace
   organizationId: dverardi
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 1
