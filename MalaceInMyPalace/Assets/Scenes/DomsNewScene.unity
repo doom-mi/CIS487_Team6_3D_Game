@@ -1301,6 +1301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &178059125
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1352,6 +1353,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &217527958
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2610,6 +2612,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &449135000
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2994,6 +2997,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &493334390
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3201,6 +3205,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &529310850
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3605,6 +3610,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &625643448
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3656,6 +3662,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &684020585
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3833,6 +3840,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &725080285
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4059,6 +4067,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &776187175
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4492,6 +4501,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &837773457
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4525,6 +4535,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &851147774
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4564,6 +4575,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &853565796
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5027,6 +5039,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &926108382
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5342,6 +5355,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &989427469
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6148,6 +6162,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1116793224
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6271,6 +6286,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1159079195
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6873,6 +6889,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1249194345
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6906,6 +6923,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1253060439
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6945,6 +6963,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1273080138
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6978,6 +6997,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1276609751
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7011,6 +7031,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1277650604
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7060,6 +7081,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1288202987
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7093,6 +7115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1293642811
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7132,6 +7155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1322042511
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7259,6 +7283,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1323761172
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7292,6 +7317,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1324639584
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7325,6 +7351,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1327904220
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7974,6 +8001,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1439002677
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8102,6 +8130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1462198737
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8273,6 +8302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1482712173
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8306,6 +8336,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1492761432
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8339,6 +8370,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1507551843
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8378,6 +8410,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1520896931
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8443,6 +8476,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1537696980
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8551,6 +8585,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1560719159
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8584,6 +8619,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1572196937
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8836,6 +8872,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1604786171
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9116,6 +9153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1643527714
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9218,6 +9256,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1668210120
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9326,6 +9365,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1674216140
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9503,6 +9543,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1705340363
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9627,6 +9668,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1725464223
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9729,6 +9771,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1732714971
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9782,6 +9825,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1736656309
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10136,6 +10180,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1799612633
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10238,6 +10283,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1811171365
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10277,6 +10323,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1831610236
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10364,6 +10411,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1851781626
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10397,6 +10445,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1856385505
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10430,6 +10479,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1862498001
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10759,6 +10809,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1885823442
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11118,6 +11169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1950405512
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11177,6 +11229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1955824540
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11230,6 +11283,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1963091342
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11263,6 +11317,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1964569935
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11434,6 +11489,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &1988197868
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11700,6 +11756,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &2030960447
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11808,6 +11865,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &2064140333
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11841,6 +11899,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &2064358183
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11894,6 +11953,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &2066723845
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11996,6 +12056,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &2069934021
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12098,6 +12159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &2087547828
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12216,6 +12278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &2107390535
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12461,6 +12524,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0}
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
+  positionOffset: {x: 0, y: 0.6, z: 0}
 --- !u!65 &2122481617
 BoxCollider:
   m_ObjectHideFlags: 0

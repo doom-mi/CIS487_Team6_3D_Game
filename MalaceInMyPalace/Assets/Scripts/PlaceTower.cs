@@ -1,9 +1,11 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class PlaceTower : MonoBehaviour
 {
     public Color hoverColor;
     public Color defaultColor;
+    public Vector3 positionOffset;
 
     private GameObject tower;
 
@@ -23,7 +25,7 @@ public class PlaceTower : MonoBehaviour
         }
 
        GameObject towerToBuild = BuildManager.instance.GetTowerToBuild();
-       tower = (GameObject)Instantiate(towerToBuild, transform.position, transform.rotation);
+       tower = (GameObject)Instantiate(towerToBuild, transform.position + positionOffset, transform.rotation);
     }
 
     void OnMouseEnter()
