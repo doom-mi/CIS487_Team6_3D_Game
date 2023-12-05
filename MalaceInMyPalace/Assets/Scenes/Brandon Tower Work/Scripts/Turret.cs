@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Core.Health;
 using Core.Utilities;
 using TowerDefense.Affectors;
 using Unity.VisualScripting;
@@ -24,6 +25,8 @@ public class Turret : MonoBehaviour
     [Header("Attributes")]
     public float fireRate = 1f;
     public float range = 2f;
+    public float AOE = 0;
+    public float damage = 10;
     public string enemyTag = "Enemy";
     
     
@@ -86,6 +89,8 @@ public class Turret : MonoBehaviour
 
         if (bullet != null){
             bullet.setTarget(target);
+            bullet.setAoe(AOE);
+            bullet.setDamage(damage);
         }
     }
 
