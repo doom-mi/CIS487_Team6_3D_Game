@@ -67,6 +67,7 @@ public class Enemy : MonoBehaviour
 
     void EndPath(){
         PlayerStats.Lives--;
+        audioManager.PlaySFX(audioManager.playerLoseLife);
         Destroy(gameObject);
     }
 

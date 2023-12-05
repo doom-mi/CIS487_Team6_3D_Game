@@ -12,6 +12,12 @@ public class PlaceTower : MonoBehaviour
     private Renderer rend;
 
     BuildManager buildManager;
+    AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
     private void Start()
     {
@@ -38,6 +44,7 @@ public class PlaceTower : MonoBehaviour
         }
 
        GameObject towerToBuild = buildManager.GetTowerToBuild();
+       audioManager.PlaySFX(audioManager.playerPlaceTower);
        tower = (GameObject)Instantiate(towerToBuild, transform.position + positionOffset, transform.rotation);
     }
 
