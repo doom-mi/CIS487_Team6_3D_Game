@@ -22,16 +22,23 @@ public class PlaceTower : MonoBehaviour
             return;
         }
 
-       //Build a turret
+       GameObject towerToBuild = BuildManager.instance.GetTowerToBuild();
+       tower = (GameObject)Instantiate(towerToBuild, transform.position, transform.rotation);
     }
 
     void OnMouseEnter()
     {
-        rend.material.color = hoverColor;
+        foreach (Material mat in rend.materials)
+        {
+            mat.color = hoverColor;
+        }
     }
 
     private void OnMouseExit()
     {
-        rend.material.color = defaultColor;
+        foreach (Material mat in rend.materials)
+        {
+            mat.color = defaultColor;
+        }
     }
 }
