@@ -133,6 +133,7 @@ MonoBehaviour:
   health: 20
   speed: 4
   enemyValue: 20
+  enemyTakesDamage: {fileID: 8300000, guid: 873dc56e1529d4147b1dd8a60b6c4e78, type: 3}
 --- !u!135 &3295412145696219643
 SphereCollider:
   m_ObjectHideFlags: 0

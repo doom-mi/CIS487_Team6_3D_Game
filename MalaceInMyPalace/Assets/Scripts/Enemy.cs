@@ -11,6 +11,15 @@ public class Enemy : MonoBehaviour
     private Transform target;
     private int waypointIndex = 0;
 
+    [Header("Audio")]
+    public AudioClip enemyTakesDamage;
+    AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
+
     private void Start()
     {
         target = Waypoints.waypoints[0];
@@ -18,6 +27,7 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(float amount){
         health -= amount;
+        audioManager.PlaySFX(enemyTakesDamage);
         if (health <= 0){
             Die();
         }
