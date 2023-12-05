@@ -87,11 +87,11 @@ public class WaveSpawner : MonoBehaviour
             searchCountdown = 1f;
             if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
             {
-                Debug.Log("Enemy Dead" + GameObject.FindGameObjectsWithTag("Enemy"));
+                //Debug.Log("Enemy Dead" + GameObject.FindGameObjectsWithTag("Enemy"));
                 return false;
             }
         }
-        Debug.Log("Enemy Alive" + GameObject.FindGameObjectsWithTag("Enemy"));
+        //Debug.Log("Enemy Alive" + GameObject.FindGameObjectsWithTag("Enemy"));
         return true;
     }
 
