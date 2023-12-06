@@ -62,6 +62,7 @@ public class Enemy : MonoBehaviour
         }
         waypointIndex++;
         target = Waypoints.waypoints[waypointIndex];
+        transform.LookAt(target);
     }
 
 
