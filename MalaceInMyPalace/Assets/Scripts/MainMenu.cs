@@ -21,7 +21,7 @@ public class MainMenu : MonoBehaviour
 
     void Start()
     {
-        if (PlayerPrefs.HasKey("MusicVolume"))
+        if (PlayerPrefs.HasKey("MusicVolume") && PlayerPrefs.HasKey("SFXVolume"))
         {
             LoadVolume();
         } 
@@ -29,6 +29,7 @@ public class MainMenu : MonoBehaviour
         {
             SetMusicVolume();
             SetSFXVolume();
+            SaveVolume();
         }
     }
 
@@ -44,20 +45,27 @@ public class MainMenu : MonoBehaviour
     {
         float volume = musicSlider.value;
         myMixer.SetFloat("MusicVolume", Mathf.Log10(volume)*20);
+        SaveVolume();
     }
 
     public void SetSFXVolume()
     {
         float volume = SFXSlider.value;
         myMixer.SetFloat("SFXVolume", Mathf.Log10(volume)*20);
+        SaveVolume();
+    }
+
+        private void SaveVolume()
+    {
+        PlayerPrefs.SetFloat("MusicVolume", musicSlider.value);
+        PlayerPrefs.SetFloat("SFXVolume", SFXSlider.value);
+        PlayerPrefs.Save();
     }
 
     private void LoadVolume()
     {
         musicSlider.value = PlayerPrefs.GetFloat("MusicVolume");
         SFXSlider.value = PlayerPrefs.GetFloat("SFXVolume");
-        SetMusicVolume();
-        SetSFXVolume();
     }
 
         public void playSound()
@@ -65,7 +73,10 @@ public class MainMenu : MonoBehaviour
         audioManager.PlaySFX(audioManager.optionClicked);
     }
 
-   
+       public void LoadLevel1()
+    {
+        SceneManager.LoadScene("DomsNewScene");
+    }
 
     public void Quit()
     {

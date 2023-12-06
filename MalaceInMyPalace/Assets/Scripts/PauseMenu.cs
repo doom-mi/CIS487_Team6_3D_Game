@@ -15,6 +15,7 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private Slider SFXSlider;
 
       AudioManager audioManager;
+      private bool isFirstStart = true;
 
           private void Awake()
     {
@@ -26,14 +27,16 @@ public class PauseMenu : MonoBehaviour
     {
         pauseMenu.SetActive(false);
                 Time.timeScale = 1f; 
-        if (PlayerPrefs.HasKey("MusicVolume"))
+        if (PlayerPrefs.HasKey("MusicVolume") && PlayerPrefs.HasKey("SFXVolume") && isFirstStart)
         {
             LoadVolume();
+            isFirstStart = false;
         } 
         else
         {
             SetMusicVolume();
             SetSFXVolume();
+            SaveVolume();
         }
     }
 
@@ -84,12 +87,25 @@ public class PauseMenu : MonoBehaviour
     {
         float volume = musicSlider.value;
         myMixer.SetFloat("MusicVolume", Mathf.Log10(volume)*20);
+        if (!isFirstStart) {
+        SaveVolume();
+        }
     }
 
     public void SetSFXVolume()
     {
         float volume = SFXSlider.value;
         myMixer.SetFloat("SFXVolume", Mathf.Log10(volume)*20);
+        if (!isFirstStart) {
+        SaveVolume();
+        }
+    }
+
+        private void SaveVolume()
+    {
+        PlayerPrefs.SetFloat("MusicVolume", musicSlider.value);
+        PlayerPrefs.SetFloat("SFXVolume", SFXSlider.value);
+        PlayerPrefs.Save();
     }
 
     private void LoadVolume()
