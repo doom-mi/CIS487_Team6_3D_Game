@@ -5,8 +5,16 @@ using UnityEngine;
 
 public class GameplayManager : MonoBehaviour {
 
-    private bool gameEnd = false;
+    public static bool gameEnd;
 
+    public GameObject gameOverUI;
+    public GameObject buyMenuUI;
+
+
+    void Start ()
+    {
+        gameEnd = false;
+    }
     void Update() {
         if (gameEnd == true) { return; }
 
@@ -17,6 +25,8 @@ public class GameplayManager : MonoBehaviour {
 
     void EndGame() {
         gameEnd = true;
+        buyMenuUI.SetActive(false);
+        gameOverUI.SetActive(true);
         Debug.Log("Game Over!");
     }
 

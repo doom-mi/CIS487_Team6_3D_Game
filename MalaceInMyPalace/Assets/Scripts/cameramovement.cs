@@ -14,6 +14,10 @@ public class cameramovement : MonoBehaviour
     void Update()
     {
         // Perform movement and zooming
+        if (GameplayManager.gameEnd)
+        {
+            this.enabled = false;
+        }
         PerformMovement();
         ZoomCamera();
     }
