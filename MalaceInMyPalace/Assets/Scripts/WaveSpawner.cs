@@ -66,17 +66,15 @@ public class WaveSpawner : MonoBehaviour
     void gameWin(int wave)
     {
         string waveString = wave.ToString();
+        // grab the RTE
         GameObject gameWinScreenObject = Instantiate(gameWinScreen, Vector3.zero, Quaternion.identity);
-
         Transform backgroundTransform = gameWinScreenObject.transform.Find("Background");
         Transform wavesCompletedTextTransform = backgroundTransform.Find("WavesCompletedText");
 
-        // Check if wavesCompletedTextTransform is not null before attempting to get the Text component
         if (wavesCompletedTextTransform != null)
         {
             TextMeshProUGUI wavesCompletedText = wavesCompletedTextTransform.GetComponent<TextMeshProUGUI>();
 
-            // Check if wavesCompletedText is not null before setting its text
             if (wavesCompletedText != null)
             {
                 wavesCompletedText.text = waveString + "/" + waveString + " Waves Completed";

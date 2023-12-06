@@ -744,6 +744,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 304067580452664115}
+  settingsMenu: {fileID: 908580983835705603}
   isPaused: 0
   myMixer: {fileID: 24100000, guid: 1bf60fe654d6e7642bd279dc518e0e1f, type: 2}
   musicSlider: {fileID: 7585324670687254882}
