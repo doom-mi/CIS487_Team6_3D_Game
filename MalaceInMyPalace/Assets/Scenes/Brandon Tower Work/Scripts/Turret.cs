@@ -29,7 +29,14 @@ public class Turret : MonoBehaviour
     public float damage = 10;
     public string enemyTag = "Enemy";
     
-    
+    [Header("Audio")]
+    public AudioClip towerSound;
+    AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
     void Start(){
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
@@ -84,6 +91,7 @@ public class Turret : MonoBehaviour
 
     void Attack(){
         //Debug.DrawLine(transform.position, target.transform.position, Color.red, 1f);
+        audioManager.PlaySFX(towerSound);
         GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         BulletController bullet = bulletGO.GetComponent<BulletController>();
 

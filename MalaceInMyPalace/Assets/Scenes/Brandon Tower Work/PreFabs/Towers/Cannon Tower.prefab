@@ -54,6 +54,7 @@ MonoBehaviour:
   AOE: 2
   damage: 15
   enemyTag: Enemy
+  towerSound: {fileID: 8300000, guid: af2b63697fd97e847832ebbfe18dc75a, type: 3}
 --- !u!1001 &592683613961761059
 PrefabInstance:
   m_ObjectHideFlags: 0
