@@ -106,6 +106,7 @@ public class WaveSpawner : MonoBehaviour
         else
         {
             nextWave++;
+            PlayerStats.Rounds++;
         }
 
     }
