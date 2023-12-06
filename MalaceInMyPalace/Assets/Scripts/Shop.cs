@@ -4,19 +4,22 @@ public class Shop : MonoBehaviour
 {
     BuildManager buildManager;
 
+    public TowerBlueprint arrowTower;
+    public TowerBlueprint cannonTower;
+
     private void Start()
     {
         buildManager = BuildManager.instance;
     }
 
-    public void PurchaseArrowTower()
+    public void SelectArrowTower()
     {
         Debug.Log("Selected arrow tower");
-        buildManager.SetTowerToBuild(buildManager.arrowTowerPrefab);
+        buildManager.SelectTowerToBuild(arrowTower);
     }
-    public void PurchaseCannonTower()
+    public void SelectCannonTower()
     {
         Debug.Log("Selected cannon tower");
-        buildManager.SetTowerToBuild(buildManager.cannonTowerPrefab);
+        buildManager.SelectTowerToBuild(cannonTower);
     }
 }
