@@ -7,6 +7,8 @@ public class cameramovement : MonoBehaviour
     public float movementSpeed = 5.0f; // Adjust this to set the regular movement speed of the camera
     public float zoomSpeed = 5.0f; // Adjust this to set the zoom speed of the camera
     public float rightClickMovementSpeed = 10.0f; // Adjust this to set the movement speed while holding right click
+    public float minY = 2.0f; // Minimum Y-axis position for zoom
+    public float maxY = 10.0f; // Maximum Y-axis position for zoom
     private bool isMovingWithRightClick = false;
 
     void Update()
@@ -56,6 +58,9 @@ public class cameramovement : MonoBehaviour
         // Zoom in/out with scroll wheel
         float scrollInput = Input.GetAxis("Mouse ScrollWheel");
         Vector3 newPosition = transform.position + transform.forward * scrollInput * zoomSpeed;
+        // Limit the Y-axis position within the specified range
+        newPosition.y = Mathf.Clamp(newPosition.y, minY, maxY);
+
         transform.position = Vector3.Lerp(transform.position, newPosition, Time.deltaTime * zoomSpeed);
     }
 }

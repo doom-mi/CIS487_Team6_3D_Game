@@ -7,7 +7,8 @@ public class PlaceTower : MonoBehaviour
     public Color defaultColor;
     public Vector3 positionOffset;
 
-    private GameObject tower;
+    [Header("OPTIONAL")]
+    public GameObject tower;
 
     private Renderer rend;
 
@@ -25,6 +26,11 @@ public class PlaceTower : MonoBehaviour
         buildManager = BuildManager.instance;
     }
 
+    public Vector3 GetTilePosition()
+    {
+        return transform.position + positionOffset;
+    }
+
     void OnMouseDown()
     {
         if (EventSystem.current.IsPointerOverGameObject())
@@ -32,9 +38,10 @@ public class PlaceTower : MonoBehaviour
             return;
         }
 
-        if (buildManager.GetTowerToBuild() == null)
+        if (!buildManager.CanBuild)
         {
             Debug.Log("Tower is NULL mouse down");
+            return;
         }
 
         if (tower!=null)
@@ -46,6 +53,7 @@ public class PlaceTower : MonoBehaviour
        GameObject towerToBuild = buildManager.GetTowerToBuild();
        audioManager.PlaySFX(audioManager.playerPlaceTower);
        tower = (GameObject)Instantiate(towerToBuild, transform.position + positionOffset, transform.rotation);
+        buildManager.BuildTowerOn(this);
     }
 
     void OnMouseEnter()
@@ -55,7 +63,7 @@ public class PlaceTower : MonoBehaviour
             return;
         }
 
-        if (buildManager.GetTowerToBuild() == null)
+        if (!buildManager.CanBuild)
         {
             return;
         }

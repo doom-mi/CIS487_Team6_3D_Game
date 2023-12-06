@@ -10,21 +10,24 @@ public class Shop : MonoBehaviour
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
+    public TowerBlueprint arrowTower;
+    public TowerBlueprint cannonTower;
+
     private void Start()
     {
         buildManager = BuildManager.instance;
     }
 
-    public void PurchaseArrowTower()
+    public void SelectArrowTower()
     {
         audioManager.PlaySFX(audioManager.selectTower);
         Debug.Log("Selected arrow tower");
-        buildManager.SetTowerToBuild(buildManager.arrowTowerPrefab);
+        buildManager.SelectTowerToBuild(arrowTower);
     }
-    public void PurchaseCannonTower()
+    public void SelectCannonTower()
     {
         audioManager.PlaySFX(audioManager.selectTower);
         Debug.Log("Selected cannon tower");
-        buildManager.SetTowerToBuild(buildManager.cannonTowerPrefab);
+        buildManager.SelectTowerToBuild(cannonTower);
     }
 }

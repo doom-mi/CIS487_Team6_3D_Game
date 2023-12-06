@@ -1,8 +1,11 @@
+using TowerDefense.Towers;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BuildManager : MonoBehaviour
 {
     public static BuildManager instance;
+    
 
     private void Awake()
     {   
@@ -18,15 +21,27 @@ public class BuildManager : MonoBehaviour
     public GameObject arrowTowerPrefab;
     public GameObject cannonTowerPrefab;
 
-    private GameObject towerToBuild;
+    private TowerBlueprint towerToBuild;
 
-    public GameObject GetTowerToBuild()
-    {
-        return towerToBuild;
-    }
+    public bool CanBuild { get { return towerToBuild != null; } }
 
-    public void SetTowerToBuild(GameObject tower)
+    public void SelectTowerToBuild(TowerBlueprint tower)
     {
         towerToBuild = tower;
+    }
+
+    public void BuildTowerOn(PlaceTower tile)
+    {
+        if(PlayerStats.Money < towerToBuild.cost)
+        {
+            Debug.Log("Not enough money to build that! TODO: DISPLAY TO USER");
+            return;
+        }
+
+       PlayerStats.Money -= towerToBuild.cost;
+       GameObject tower = Instantiate(towerToBuild.prefab, tile.GetTilePosition(), Quaternion.identity);
+       tile.tower = tower;
+
+        Debug.Log("Tower built! Money left: " + PlayerStats.Money);
     }
 }
