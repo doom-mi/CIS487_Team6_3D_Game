@@ -17,7 +17,7 @@ public class GameplayManager : MonoBehaviour {
         }
     }
 
-    void start() 
+    void Start() 
     {
         gameEnd = false;
     }
