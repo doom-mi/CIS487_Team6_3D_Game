@@ -57,10 +57,10 @@ MonoBehaviour:
   playerPlaceTower: {fileID: 8300000, guid: 7fb713f3a89c3e44787954467670dfb2, type: 3}
   waveStart: {fileID: 8300000, guid: d42c2c2a0f3ebf74f8c408d2ea8956a8, type: 3}
   selectTower: {fileID: 8300000, guid: 8e4800005a7718c46963f872a31f0a74, type: 3}
-  openPauseMenu: {fileID: 0}
-  closePauseMenu: {fileID: 0}
-  optionClicked: {fileID: 0}
-  gameOver: {fileID: 0}
+  openPauseMenu: {fileID: 8300000, guid: 7bfdabe2cc6434c4dbbc539633432e6e, type: 3}
+  closePauseMenu: {fileID: 8300000, guid: aacf37f32f668204b9b69edc9c44ba07, type: 3}
+  optionClicked: {fileID: 8300000, guid: d325b4fbad170094e9bc90c531979337, type: 3}
+  gameOver: {fileID: 8300000, guid: df5a4708eb568224e91fc09c4a995a9c, type: 3}
   IfNeeded: {fileID: 0}
 --- !u!1 &4753662543666661085
 GameObject:
@@ -234,11 +234,11 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 7910143224707662382, guid: 1bf60fe654d6e7642bd279dc518e0e1f,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: fa29c69b19d659b40b97257ff558c688, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
