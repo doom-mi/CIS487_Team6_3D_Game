@@ -29,7 +29,6 @@ public class MainMenu : MonoBehaviour
         {
             SetMusicVolume();
             SetSFXVolume();
-            SaveVolume();
         }
     }
 
@@ -41,31 +40,38 @@ public class MainMenu : MonoBehaviour
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 
-    public void SetMusicVolume()
-    {
-        float volume = musicSlider.value;
-        myMixer.SetFloat("MusicVolume", Mathf.Log10(volume)*20);
-        SaveVolume();
-    }
+public void SetMusicVolume()
+{
+    float volume = musicSlider.value;
+    myMixer.SetFloat("MusicVolume", Mathf.Log10(volume) * 20);
+    SaveMusicVolume(); // Save the updated music volume
+}
 
-    public void SetSFXVolume()
-    {
-        float volume = SFXSlider.value;
-        myMixer.SetFloat("SFXVolume", Mathf.Log10(volume)*20);
-        SaveVolume();
-    }
+public void SetSFXVolume()
+{
+    float volume = SFXSlider.value;
+    myMixer.SetFloat("SFXVolume", Mathf.Log10(volume) * 20);
+    SaveSFXVolume(); // Save the updated SFX volume
+}
 
-        private void SaveVolume()
-    {
-        PlayerPrefs.SetFloat("MusicVolume", musicSlider.value);
-        PlayerPrefs.SetFloat("SFXVolume", SFXSlider.value);
-        PlayerPrefs.Save();
-    }
+private void SaveMusicVolume()
+{
+    PlayerPrefs.SetFloat("MusicVolume", musicSlider.value);
+    PlayerPrefs.Save();
+}
+
+private void SaveSFXVolume()
+{
+    PlayerPrefs.SetFloat("SFXVolume", SFXSlider.value);
+    PlayerPrefs.Save();
+}
 
     private void LoadVolume()
     {
         musicSlider.value = PlayerPrefs.GetFloat("MusicVolume");
         SFXSlider.value = PlayerPrefs.GetFloat("SFXVolume");
+        SetMusicVolume();
+        SetSFXVolume();
     }
 
         public void playSound()
