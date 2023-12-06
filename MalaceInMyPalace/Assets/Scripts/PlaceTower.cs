@@ -50,9 +50,7 @@ public class PlaceTower : MonoBehaviour
             return;
         }
 
-       GameObject towerToBuild = buildManager.GetTowerToBuild();
        audioManager.PlaySFX(audioManager.playerPlaceTower);
-       tower = (GameObject)Instantiate(towerToBuild, transform.position + positionOffset, transform.rotation);
         buildManager.BuildTowerOn(this);
     }
 
