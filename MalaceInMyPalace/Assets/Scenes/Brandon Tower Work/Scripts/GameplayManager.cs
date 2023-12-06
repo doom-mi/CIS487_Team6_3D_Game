@@ -5,8 +5,9 @@ using UnityEngine;
 
 public class GameplayManager : MonoBehaviour {
 
-    private bool gameEnd = false;
+    public static bool gameEnd = false;
     public GameObject gameOverScreen;
+    public GameObject buyMenuUI;
 
     void Update() {
         if (gameEnd == true) { return; }
@@ -16,8 +17,14 @@ public class GameplayManager : MonoBehaviour {
         }
     }
 
+    void start() 
+    {
+        gameEnd = false;
+    }
+
     void EndGame() {
         gameEnd = true;
+        buyMenuUI.SetActive(false);
         GameObject newObject = Instantiate(gameOverScreen, Vector3.zero, Quaternion.identity);
         Debug.Log("Game Over!");
     }
