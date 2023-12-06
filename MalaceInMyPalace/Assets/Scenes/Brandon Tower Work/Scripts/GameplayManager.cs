@@ -6,6 +6,7 @@ using UnityEngine;
 public class GameplayManager : MonoBehaviour {
 
     private bool gameEnd = false;
+    public GameObject gameOverScreen;
 
     void Update() {
         if (gameEnd == true) { return; }
@@ -17,6 +18,7 @@ public class GameplayManager : MonoBehaviour {
 
     void EndGame() {
         gameEnd = true;
+        GameObject newObject = Instantiate(gameOverScreen, Vector3.zero, Quaternion.identity);
         Debug.Log("Game Over!");
     }
 
