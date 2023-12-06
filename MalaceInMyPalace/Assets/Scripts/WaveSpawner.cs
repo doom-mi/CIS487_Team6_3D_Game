@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using TMPro;
 
 public class WaveSpawner : MonoBehaviour
 {
@@ -24,6 +25,7 @@ public class WaveSpawner : MonoBehaviour
 
     private SpawnState state = SpawnState.COUNTING;
 
+    public GameObject gameWinScreen;
     public Vector3 spawnPosition;
     public Quaternion spawnRotation;
 
@@ -61,6 +63,34 @@ public class WaveSpawner : MonoBehaviour
         }
     }
 
+    void gameWin(int wave)
+    {
+        string waveString = wave.ToString();
+        // grab the RTE
+        GameObject gameWinScreenObject = Instantiate(gameWinScreen, Vector3.zero, Quaternion.identity);
+        Transform backgroundTransform = gameWinScreenObject.transform.Find("Background");
+        Transform wavesCompletedTextTransform = backgroundTransform.Find("WavesCompletedText");
+
+        if (wavesCompletedTextTransform != null)
+        {
+            TextMeshProUGUI wavesCompletedText = wavesCompletedTextTransform.GetComponent<TextMeshProUGUI>();
+
+            if (wavesCompletedText != null)
+            {
+                wavesCompletedText.text = waveString + "/" + waveString + " Waves Completed";
+            }
+            else
+            {
+                Debug.Log("UnityEngine.UI.Text component not found on WavesCompletedText GameObject!");
+            }
+        }
+        else
+        {
+            Debug.Log("WavesCompletedText not found under Background GameObject!");
+        }
+
+    }
+
     void WaveCompleted()
     {
         state = SpawnState.COUNTING;
@@ -69,6 +99,7 @@ public class WaveSpawner : MonoBehaviour
         if (nextWave + 1 > waves.Length - 1)
         {
             //Put win condition or state here/Level finished scene here
+            gameWin(nextWave);
             nextWave = 0;
             Debug.Log("Completed All Waves! Looping..");
         }

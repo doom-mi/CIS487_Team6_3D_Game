@@ -9,6 +9,7 @@ using UnityEngine.UI;
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenu;
+    public GameObject settingsMenu;
     public bool isPaused;
         [SerializeField] private AudioMixer myMixer;
     [SerializeField] private Slider musicSlider;
@@ -59,6 +60,7 @@ public class PauseMenu : MonoBehaviour
     public void ResumeGame()
     {
         pauseMenu.SetActive(false);
+        settingsMenu.SetActive(false);
         isPaused = false;
         audioManager.PlaySFX(audioManager.closePauseMenu);
         Time.timeScale = 1f;
