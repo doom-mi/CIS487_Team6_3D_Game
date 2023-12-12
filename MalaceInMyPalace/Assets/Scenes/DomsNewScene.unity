@@ -1667,16 +1667,16 @@ MonoBehaviour:
       type: 3}
     count: 25
     rate: 2.5
-  - name: Second Wave
+  - name: First Wave
     enemyPrefab: {fileID: 1065612266290128033, guid: f7e63a13b84163d42b703918b58d2612,
       type: 3}
-    count: 10
-    rate: 1.5
-  - name: Third Wave
+    count: 25
+    rate: 2.5
+  - name: First Wave
     enemyPrefab: {fileID: 1065612266290128033, guid: f7e63a13b84163d42b703918b58d2612,
       type: 3}
-    count: 20
-    rate: 2
+    count: 25
+    rate: 2.5
   timeBetweenWaves: 5
   gameWinScreen: {fileID: 4015805463216971690, guid: 1ae972332350e8f47ac32234475f46d5,
     type: 3}

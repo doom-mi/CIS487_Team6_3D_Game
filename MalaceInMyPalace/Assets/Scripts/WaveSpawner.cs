@@ -65,6 +65,8 @@ public class WaveSpawner : MonoBehaviour
 
     void gameWin(int wave)
     {
+        // Since wave starts at 0, show the user its wave 1
+        wave += 1;
         string waveString = wave.ToString();
         // grab the RTE
         GameObject gameWinScreenObject = Instantiate(gameWinScreen, Vector3.zero, Quaternion.identity);
