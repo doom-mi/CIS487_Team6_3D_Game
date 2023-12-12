@@ -1,9 +1,12 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Shop : MonoBehaviour
 {
     BuildManager buildManager;
-        AudioManager audioManager;
+    AudioManager audioManager;
+    public Button arrowButton;
+    public Button cannonButton;
 
     private void Awake()
     {
@@ -16,6 +19,8 @@ public class Shop : MonoBehaviour
     private void Start()
     {
         buildManager = BuildManager.instance;
+        arrowButton.interactable = true;
+        cannonButton.interactable = true;
     }
 
     public void SelectArrowTower()
@@ -23,11 +28,15 @@ public class Shop : MonoBehaviour
         audioManager.PlaySFX(audioManager.selectTower);
         Debug.Log("Selected arrow tower");
         buildManager.SelectTowerToBuild(arrowTower);
+        arrowButton.interactable = false;
+        cannonButton.interactable = true;
     }
     public void SelectCannonTower()
     {
         audioManager.PlaySFX(audioManager.selectTower);
         Debug.Log("Selected cannon tower");
         buildManager.SelectTowerToBuild(cannonTower);
+        cannonButton.interactable = false;
+        arrowButton.interactable = true;
     }
 }
