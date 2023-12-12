@@ -22,12 +22,35 @@ public class BuildManager : MonoBehaviour
     public GameObject cannonTowerPrefab;
 
     private TowerBlueprint towerToBuild;
+    private PlaceTower selectedTower;
+
+    public PlacematUI placematUI;
 
     public bool CanBuild { get { return towerToBuild != null; } }
 
     public void SelectTowerToBuild(TowerBlueprint tower)
     {
         towerToBuild = tower;
+        DeselectPlacement();
+    }
+
+    public void SelectPlacemat(PlaceTower spot)
+    {
+        if(selectedTower == spot)
+        {
+            DeselectPlacement();
+            return;
+        }
+        selectedTower = spot;
+        towerToBuild = null;
+
+        placematUI.SetTarget(spot);
+    }
+
+    public void DeselectPlacement() 
+    {
+        selectedTower = null;
+        placematUI.Hide();
     }
 
     public void BuildTowerOn(PlaceTower tile)
