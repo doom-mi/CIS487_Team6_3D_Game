@@ -97,15 +97,19 @@ public class WaveSpawner : MonoBehaviour
     {
         state = SpawnState.COUNTING;
         countdown = timeBetweenWaves;
+        PlayerStats.Money += 50;
         
         if (nextWave + 1 > waves.Length - 1)
         {
             //Put win condition or state here/Level finished scene here
-            PlayerStats.Rounds++;
-            gameWin(nextWave);
-            nextWave = 0;
-            Debug.Log("Completed All Waves! Looping..");
-            Time.timeScale = 0;
+            if (PlayerStats.Lives > 0)
+            {
+                PlayerStats.Rounds++;
+                gameWin(nextWave);
+                nextWave = 0;
+                Debug.Log("Completed All Waves! Looping..");
+                Time.timeScale = 0;
+            }
         }
         else
         {

@@ -6,7 +6,7 @@ public class Enemy : MonoBehaviour
     [Header("Enemy Stats")]
     public float health = 100;    // Enemy Health
     public float speed = 10f;   // Enemy Movement Speed
-    public int enemyValue = 20; // Coin when killed
+    private int enemyValue = 5; // Coin when killed
 
     private Transform target;
     private int waypointIndex = 0;

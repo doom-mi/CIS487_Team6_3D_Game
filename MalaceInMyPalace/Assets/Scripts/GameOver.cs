@@ -3,17 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
+
 
 public class GameOver : MonoBehaviour
 {
 
-     public Text roundsText;
+     public TextMeshProUGUI roundsText;
 
     void OnEnable()
     {
         if(roundsText != null)
         {
-        roundsText.text = PlayerStats.Rounds.ToString();
+            int WavesSurvived = PlayerStats.Rounds - 1;
+            roundsText.text = WavesSurvived.ToString() + " Waves Survived";
         }
     }
     public void GoToMainMenu()

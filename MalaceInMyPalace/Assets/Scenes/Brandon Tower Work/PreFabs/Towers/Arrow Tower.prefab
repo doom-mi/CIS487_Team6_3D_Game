@@ -52,7 +52,7 @@ MonoBehaviour:
   fireRate: 2
   range: 5
   AOE: 0
-  damage: 20
+  damage: 10
   enemyTag: Enemy
   towerSound: {fileID: 8300000, guid: 075d7e82b3c0f034695ac9d87324bb72, type: 3}
 --- !u!1001 &4928227075082139737
