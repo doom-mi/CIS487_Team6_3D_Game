@@ -122,4 +122,11 @@ public class PlaceTower : MonoBehaviour
 
         Debug.Log("Tower upgraded! Money left: " + PlayerStats.Money);
     }
+
+    public void SellTurret()
+    {
+        PlayerStats.Money += towerBlueprint.GetSellAmount();
+        Destroy(tower);
+        towerBlueprint = null;
+    }
 }
