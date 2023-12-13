@@ -25,8 +25,9 @@ public class GameplayManager : MonoBehaviour {
     void EndGame() {
         gameEnd = true;
         buyMenuUI.SetActive(false);
-         gameOverScreen.SetActive(true);
-        //GameObject newObject = Instantiate(gameOverScreen, Vector3.zero, Quaternion.identity);
+        //gameOverScreen.SetActive(true);
+        GameObject newObject = Instantiate(gameOverScreen, Vector3.zero, Quaternion.identity);
+        newObject.SetActive(true);
         Debug.Log("Game Over!");
     }
 
