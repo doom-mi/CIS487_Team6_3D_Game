@@ -7,8 +7,12 @@ public class PlaceTower : MonoBehaviour
     public Color defaultColor;
     public Vector3 positionOffset;
 
-    [Header("OPTIONAL")]
+    [HideInInspector]
     public GameObject tower;
+    [HideInInspector]
+    public TowerBlueprint towerBlueprint;
+    [HideInInspector]
+    public bool isUpgraded = false;
 
     private Renderer rend;
 
@@ -50,8 +54,26 @@ public class PlaceTower : MonoBehaviour
             return;
         }
 
+        BuildTower(buildManager.GetTowerToBuild());
+    }
+
+    void BuildTower(TowerBlueprint blueprint)
+    {
         audioManager.PlaySFX(audioManager.playerPlaceTower);
-        buildManager.BuildTowerOn(this);
+
+        if (PlayerStats.Money < blueprint.cost)
+        {
+            Debug.Log("Not enough money to build that! TODO: DISPLAY TO USER");
+            return;
+        }
+
+        PlayerStats.Money -= blueprint.cost;
+        GameObject _tower = Instantiate(blueprint.prefab, GetTilePosition(), Quaternion.identity);
+        tower = _tower;
+
+        towerBlueprint = blueprint;
+
+        Debug.Log("Tower built! Money left: " + PlayerStats.Money);
     }
 
     void OnMouseEnter()
@@ -78,5 +100,26 @@ public class PlaceTower : MonoBehaviour
         {
             mat.color = defaultColor;
         }
+    }
+
+    public void UpgradeTower()
+    {
+        audioManager.PlaySFX(audioManager.playerPlaceTower);
+
+        if (PlayerStats.Money < towerBlueprint.upgradeCost)
+        {
+            Debug.Log("Not enough money to upgrade that! TODO: DISPLAY TO USER");
+            return;
+        }
+
+        PlayerStats.Money -= towerBlueprint.upgradeCost;
+
+        Destroy(tower);
+        GameObject _tower = Instantiate(towerBlueprint.upgradedPrefab, GetTilePosition(), Quaternion.identity);
+        tower = _tower;
+
+        isUpgraded = true;
+
+        Debug.Log("Tower upgraded! Money left: " + PlayerStats.Money);
     }
 }

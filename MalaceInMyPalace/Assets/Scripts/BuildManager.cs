@@ -53,18 +53,8 @@ public class BuildManager : MonoBehaviour
         placematUI.Hide();
     }
 
-    public void BuildTowerOn(PlaceTower tile)
+    public TowerBlueprint GetTowerToBuild()
     {
-        if(PlayerStats.Money < towerToBuild.cost)
-        {
-            Debug.Log("Not enough money to build that! TODO: DISPLAY TO USER");
-            return;
-        }
-
-       PlayerStats.Money -= towerToBuild.cost;
-       GameObject tower = Instantiate(towerToBuild.prefab, tile.GetTilePosition(), Quaternion.identity);
-       tile.tower = tower;
-
-        Debug.Log("Tower built! Money left: " + PlayerStats.Money);
+        return towerToBuild;
     }
 }
