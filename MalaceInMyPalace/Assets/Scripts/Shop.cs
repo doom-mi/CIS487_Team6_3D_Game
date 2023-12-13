@@ -28,15 +28,19 @@ public class Shop : MonoBehaviour
         audioManager.PlaySFX(audioManager.selectTower);
         Debug.Log("Selected arrow tower");
         buildManager.SelectTowerToBuild(arrowTower);
-        arrowButton.interactable = false;
-        cannonButton.interactable = true;
+
+        //These two lines cause issues, but shade out the shop UI icon
+        //arrowButton.interactable = false;
+        //cannonButton.interactable = true;
     }
     public void SelectCannonTower()
     {
         audioManager.PlaySFX(audioManager.selectTower);
         Debug.Log("Selected cannon tower");
         buildManager.SelectTowerToBuild(cannonTower);
-        cannonButton.interactable = false;
-        arrowButton.interactable = true;
+
+        //These two lines cause issues, but shade out the shop UI icon
+        //cannonButton.interactable = false;
+        //arrowButton.interactable = true;
     }
 }

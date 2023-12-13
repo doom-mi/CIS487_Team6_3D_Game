@@ -38,19 +38,19 @@ public class PlaceTower : MonoBehaviour
             return;
         }
 
+        if (tower!=null)
+        {
+            buildManager.SelectPlacemat(this);
+            return;
+        }
+
         if (!buildManager.CanBuild)
         {
             Debug.Log("Tower is NULL mouse down");
             return;
         }
 
-        if (tower!=null)
-        {
-            Debug.Log("Cant build here! - TODO: Display to user");
-            return;
-        }
-
-       audioManager.PlaySFX(audioManager.playerPlaceTower);
+        audioManager.PlaySFX(audioManager.playerPlaceTower);
         buildManager.BuildTowerOn(this);
     }
 
