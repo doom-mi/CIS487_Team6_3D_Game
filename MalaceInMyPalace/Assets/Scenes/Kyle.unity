@@ -8716,6 +8716,7 @@ MonoBehaviour:
     type: 3}
   cannonTowerPrefab: {fileID: 2068216181458065619, guid: 26d540a0dbbd12a44bf93251087c9422,
     type: 3}
+  placematUI: {fileID: 0}
 --- !u!114 &1130465997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8729,6 +8730,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waves:
+  - name: First Wave
+    enemyPrefab: {fileID: 1065612266290128033, guid: f7e63a13b84163d42b703918b58d2612,
+      type: 3}
+    count: 25
+    rate: 2.5
+  - name: First Wave
+    enemyPrefab: {fileID: 1065612266290128033, guid: f7e63a13b84163d42b703918b58d2612,
+      type: 3}
+    count: 25
+    rate: 2.5
+  - name: First Wave
+    enemyPrefab: {fileID: 1065612266290128033, guid: f7e63a13b84163d42b703918b58d2612,
+      type: 3}
+    count: 25
+    rate: 2.5
   - name: First Wave
     enemyPrefab: {fileID: 1065612266290128033, guid: f7e63a13b84163d42b703918b58d2612,
       type: 3}
@@ -12381,7 +12397,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3193fb3698c1040779ae6240896338dd, type: 2}
+  - {fileID: 2100000, guid: c719e38f25a9480abd2480ab621a2949, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12420,7 +12436,7 @@ Transform:
   m_GameObject: {fileID: 1496470216}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.744071, y: -3.0940905, z: 5.638529}
-  m_LocalScale: {x: 1000, y: 1, z: 1000}
+  m_LocalScale: {x: 10, y: 1, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -18074,7 +18090,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6535617230025597021}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1, y: -6.6, z: -21}
+  m_LocalPosition: {x: -0.5, y: -6.6, z: -21}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
