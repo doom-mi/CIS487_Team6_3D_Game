@@ -10,6 +10,8 @@ public class PlacematUI : MonoBehaviour
     public TMP_Text upgradeText;
     public Button upgradeButton;
 
+    public TMP_Text sellAmount;
+
     private PlaceTower target;
     public void SetTarget(PlaceTower spot)
     {
@@ -29,6 +31,8 @@ public class PlacematUI : MonoBehaviour
             upgradeButton.interactable = false;
         }
 
+        sellAmount.text = "$" + spot.towerBlueprint.GetSellAmount();
+
         ui.SetActive(true);
     }
 
@@ -40,6 +44,12 @@ public class PlacematUI : MonoBehaviour
     public void Upgrade()
     {
         target.UpgradeTower();
+        BuildManager.instance.DeselectPlacement();
+    }
+
+    public void Sell()
+    {
+        target.SellTurret();
         BuildManager.instance.DeselectPlacement();
     }
 }
