@@ -125,6 +125,7 @@ public class PlaceTower : MonoBehaviour
 
     public void SellTurret()
     {
+        isUpgraded = false;
         PlayerStats.Money += towerBlueprint.GetSellAmount();
         Destroy(tower);
         towerBlueprint = null;
