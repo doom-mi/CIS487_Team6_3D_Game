@@ -20,12 +20,14 @@ public class PlacematUI : MonoBehaviour
 
         if (!spot.isUpgraded)
         {
+            upgradeText.text = "Upgrade";
+            upgradeText.fontStyle = FontStyles.Bold;
             upgradeCost.text = "$" + spot.towerBlueprint.upgradeCost.ToString();
             upgradeButton.interactable = true;
         }
         else
         {
-            upgradeText.text = "Tower upgraded";
+            upgradeText.text = "Tower Upgraded";
             upgradeText.fontStyle = FontStyles.Bold;
             upgradeCost.text = "";
             upgradeButton.interactable = false;
