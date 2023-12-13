@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09cbe87dfee7494e9a671a45cf923be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
+  health: 15
   speed: 8
   enemyTakesDamage: {fileID: 8300000, guid: 873dc56e1529d4147b1dd8a60b6c4e78, type: 3}
 --- !u!135 &609227786879945002
