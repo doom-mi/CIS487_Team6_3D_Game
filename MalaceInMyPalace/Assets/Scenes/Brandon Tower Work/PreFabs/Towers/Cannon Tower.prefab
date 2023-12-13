@@ -49,10 +49,10 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2212583600268211362, guid: 493f93d454ac2214e8875f1c15ff53a0,
     type: 3}
   firePoint: {fileID: 2289955050946744090}
-  fireRate: 1
+  fireRate: 0.7
   range: 3.5
-  AOE: 2
-  damage: 15
+  AOE: 2.5
+  damage: 20
   enemyTag: Enemy
   towerSound: {fileID: 8300000, guid: af2b63697fd97e847832ebbfe18dc75a, type: 3}
 --- !u!1001 &592683613961761059

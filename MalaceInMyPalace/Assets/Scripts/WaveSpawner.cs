@@ -97,6 +97,7 @@ public class WaveSpawner : MonoBehaviour
     {
         state = SpawnState.COUNTING;
         countdown = timeBetweenWaves;
+        PlayerStats.Money += 50;
         
         if (nextWave + 1 > waves.Length - 1)
         {

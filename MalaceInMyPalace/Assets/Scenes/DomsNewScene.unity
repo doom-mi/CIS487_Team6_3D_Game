@@ -2095,18 +2095,18 @@ MonoBehaviour:
   - name: First Wave
     enemyPrefab: {fileID: 1065612266290128033, guid: f7e63a13b84163d42b703918b58d2612,
       type: 3}
-    count: 25
-    rate: 2.5
+    count: 10
+    rate: 3
   - name: First Wave
     enemyPrefab: {fileID: 1065612266290128033, guid: f7e63a13b84163d42b703918b58d2612,
       type: 3}
-    count: 25
-    rate: 2.5
+    count: 15
+    rate: 1.5
   - name: First Wave
     enemyPrefab: {fileID: 1065612266290128033, guid: f7e63a13b84163d42b703918b58d2612,
       type: 3}
-    count: 25
-    rate: 2.5
+    count: 20
+    rate: 3
   timeBetweenWaves: 5
   gameWinScreen: {fileID: 4015805463216971690, guid: 1ae972332350e8f47ac32234475f46d5,
     type: 3}
@@ -2142,7 +2142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7b4e1c325e709841ac1b489debf1979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 400
+  startMoney: 250
   startLives: 20
 --- !u!114 &224261958
 MonoBehaviour:
