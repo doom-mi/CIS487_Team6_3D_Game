@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44300947, g: 0.4921977, b: 0.5719255, a: 1}
+  m_IndirectSpecularColor: {r: 0.44300964, g: 0.49219793, b: 0.5719263, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1027,6 +1027,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1614205853}
+  - {fileID: 1337593665}
   m_Father: {fileID: 128832897}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1747,10 +1748,16 @@ MonoBehaviour:
     prefab: {fileID: 2068216181458065619, guid: 5d1105ead8136c14b8348eee77e5f12e,
       type: 3}
     cost: 100
+    upgradedPrefab: {fileID: 2068216181458065619, guid: 030dc230ef92ab2418fd13b780de4194,
+      type: 3}
+    upgradeCost: 50
   cannonTower:
     prefab: {fileID: 2068216181458065619, guid: 26d540a0dbbd12a44bf93251087c9422,
       type: 3}
     cost: 250
+    upgradedPrefab: {fileID: 2068216181458065619, guid: 06f03ca9808f86648ad924f17c4bd1df,
+      type: 3}
+    upgradeCost: 100
 --- !u!114 &153283416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1993,6 +2000,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &178059125
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2046,6 +2059,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &217527958
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3454,6 +3473,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &449135000
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3498,7 +3523,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 454523178}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.024927, y: 0.5999999, z: 9.344818}
+  m_LocalPosition: {x: 20.524927, y: 0.5999999, z: 20.594818}
   m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -3519,6 +3544,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ui: {fileID: 1565553015}
+  upgradeCost: {fileID: 1302077372}
+  upgradeText: {fileID: 637893711}
+  upgradeButton: {fileID: 1364280839}
 --- !u!1001 &465871843
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3886,6 +3914,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &493334390
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4095,6 +4129,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &529310850
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4501,6 +4541,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &625643448
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4526,12 +4572,12 @@ GameObject:
   - component: {fileID: 637893712}
   - component: {fileID: 637893711}
   m_Layer: 0
-  m_Name: 
+  m_Name: UpgradeText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &637893710
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4572,9 +4618,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '<b>Upgrade </B>
-
-    $100'
+  m_text: <b>Upgrade </B>
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4609,7 +4653,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -4637,7 +4681,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 1.2611933, y: 1.210578, z: 1.2029276, w: 9.021889}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -4691,6 +4735,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &684020585
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4946,6 +4996,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &725080285
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5180,6 +5236,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &776187175
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5776,6 +5838,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &837773457
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5811,6 +5879,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &851147774
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5852,6 +5926,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &853565796
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6419,6 +6499,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &926108382
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6736,6 +6822,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &989427469
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7549,6 +7641,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1116793224
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7674,6 +7772,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1159079195
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8425,6 +8529,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1249194345
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8460,6 +8570,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1253060439
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8501,6 +8617,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1273080138
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8536,6 +8658,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1276609751
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8571,6 +8699,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1277650604
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8622,6 +8756,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1288202987
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8657,6 +8797,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1293642811
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8670,6 +8816,141 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.99999994, y: 0.19999999, z: 0.99999994}
   m_Center: {x: 0, y: 0.099999994, z: 0}
+--- !u!1 &1302077370
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1302077371}
+  - component: {fileID: 1302077373}
+  - component: {fileID: 1302077372}
+  m_Layer: 0
+  m_Name: UpgradeCost
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1302077371
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302077370}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1364280838}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1302077372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302077370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: $100
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 4
+  m_fontSizeBase: 4
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 1.2474384, y: 6.87199, z: 1.4202671, w: 1.3786101}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1302077373
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302077370}
+  m_CullTransparentMesh: 1
 --- !u!4 &1309994363 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2737503328998e744b66579c51857834,
@@ -8833,6 +9114,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1322042511
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8962,6 +9249,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1323761172
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8997,6 +9290,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1324639584
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9032,6 +9331,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1327904220
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9065,6 +9370,141 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -4855243574250553854, guid: bbf6e1c2557951243871458bf9589a28, type: 3}
+--- !u!1 &1337593664
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1337593665}
+  - component: {fileID: 1337593667}
+  - component: {fileID: 1337593666}
+  m_Layer: 5
+  m_Name: SellCost
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1337593665
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337593664}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 108759938}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1337593666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337593664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: $50
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 4
+  m_fontSizeBase: 4
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 1.3594055, y: 7.387227, z: 1.1915473, w: 1.520081}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1337593667
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337593664}
+  m_CullTransparentMesh: 1
 --- !u!1 &1338241966 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: bbf6e1c2557951243871458bf9589a28,
@@ -9278,6 +9718,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 637893710}
+  - {fileID: 1302077371}
   m_Father: {fileID: 128832897}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9329,7 +9770,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1364280840}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 454523180}
+        m_TargetAssemblyTypeName: PlacematUI, Assembly-CSharp
+        m_MethodName: Upgrade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1364280840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9862,6 +10315,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1439002677
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9992,6 +10451,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1462198737
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10165,6 +10630,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1482712173
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10200,6 +10671,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1492761432
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10235,6 +10712,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1507551843
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10276,6 +10759,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1520896931
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10343,6 +10832,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1537696980
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10662,6 +11157,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1560719159
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10701,8 +11202,8 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1565553015}
-  m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 0, y: 0, z: 0.6}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0.8}
   m_LocalScale: {x: 0.07, y: 0.07, z: 0.07}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10710,10 +11211,10 @@ RectTransform:
   - {fileID: 713794822}
   m_Father: {fileID: 454523179}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.019, y: 0.95}
+  m_AnchoredPosition: {x: -0.06, y: 0.95}
   m_SizeDelta: {x: 50, y: 23.4285}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1565553017
@@ -10766,7 +11267,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 750674930}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -10799,6 +11300,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1572196937
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11091,6 +11598,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1604786171
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11205,7 +11718,7 @@ GameObject:
   - component: {fileID: 1614205855}
   - component: {fileID: 1614205854}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: SellText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11251,9 +11764,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '<b>Sell </B>
-
-    $50'
+  m_text: <b>Sell </B>
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11288,7 +11799,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -11316,7 +11827,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 1.1991549, y: 1.2563214, z: 1.1421641, w: 8.871862}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -11510,6 +12021,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1643527714
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11614,6 +12131,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1668210120
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11724,6 +12247,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1674216140
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11903,6 +12432,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1705340363
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12029,6 +12564,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1725464223
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12133,6 +12674,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1732714971
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12188,6 +12735,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1736656309
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12624,6 +13177,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1799612633
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12728,6 +13287,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1811171365
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12769,6 +13334,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1831610236
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12859,6 +13430,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1851781626
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12894,6 +13471,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1856385505
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12929,6 +13512,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1862498001
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13260,6 +13849,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1885823442
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13900,6 +14495,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1950405512
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13961,6 +14562,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1955824540
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14016,6 +14623,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1963091342
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14051,6 +14664,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1964569935
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14224,6 +14843,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &1988197868
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14492,6 +15117,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &2030960447
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14602,6 +15233,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &2064140333
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14637,6 +15274,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &2064358183
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14692,6 +15335,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &2066723845
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14796,6 +15445,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &2069934021
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14900,6 +15555,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &2087547828
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15020,6 +15681,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &2107390535
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15267,6 +15934,12 @@ MonoBehaviour:
   defaultColor: {r: 0.5529412, g: 0.85882354, b: 0.76862746, a: 1}
   positionOffset: {x: 0, y: 0.6, z: 0}
   tower: {fileID: 0}
+  towerBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+  isUpgraded: 0
 --- !u!65 &2122481617
 BoxCollider:
   m_ObjectHideFlags: 0
