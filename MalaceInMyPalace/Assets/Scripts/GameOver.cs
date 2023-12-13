@@ -15,7 +15,8 @@ public class GameOver : MonoBehaviour
     {
         if(roundsText != null)
         {
-        roundsText.text = PlayerStats.Rounds.ToString() + " Waves Survived";
+            int WavesSurvived = PlayerStats.Rounds - 1;
+            roundsText.text = WavesSurvived.ToString() + " Waves Survived";
         }
     }
     public void GoToMainMenu()
