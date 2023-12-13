@@ -13,11 +13,14 @@ using UnityEngine.AI;
 public class Turret : MonoBehaviour
 {
 
+    public Renderer rend;
+
     [Header("Unity Setup Fields")]
     private Transform target;
     public Transform partToRotate;
     private float turnSpeed = 10f;
     private float cooldown = 0f;
+    private bool toggleRadius = true;
 
     public GameObject bulletPrefab;
     public Transform firePoint;
@@ -39,6 +42,7 @@ public class Turret : MonoBehaviour
     }
 
     void Start(){
+        rend = GetComponentInChildren<MeshRenderer>();
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
     }
 
@@ -69,6 +73,18 @@ public class Turret : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.LeftShift)){
+            if (toggleRadius == true){
+                toggleRadius = false;
+                rend.enabled = false;
+                Debug.Log("Toggle Off");
+            } else if (toggleRadius == false){
+                toggleRadius = true;
+                rend.enabled = true;
+                Debug.Log("Toggle On");
+            }
+        }
+
         if (target == null) { return; }
 
 

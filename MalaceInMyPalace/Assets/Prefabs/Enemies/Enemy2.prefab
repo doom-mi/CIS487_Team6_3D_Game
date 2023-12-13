@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 6643766083957752874}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -5.9127474, y: 10.590875, z: -5.1877694}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 583282589938370423}
@@ -48,9 +48,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09cbe87dfee7494e9a671a45cf923be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
-  speed: 10
-  enemyValue: 20
+  health: 15
+  speed: 8
   enemyTakesDamage: {fileID: 8300000, guid: 873dc56e1529d4147b1dd8a60b6c4e78, type: 3}
 --- !u!135 &609227786879945002
 SphereCollider:
@@ -79,7 +78,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!95 &6193278799162605132
 Animator:
