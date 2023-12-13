@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8931048859354045499}
   - component: {fileID: 3209787534245726748}
   - component: {fileID: 2799616693103623580}
-  - component: {fileID: 2799616693103623571}
   m_Layer: 0
   m_Name: Dialogue 1
   m_TagString: Untagged
@@ -62,25 +61,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sentences:
+  - 
   - 'King: Creatures threaten our kingdom. Defend our castle!'
   - "Warrior: I'll shield it, Majesty. What's their strength?\r"
   - "King: Varied forms, strong and elusive. Be vigilant!\r"
   - "Warrior: I'll fortify defenses. Our castle will stand!\r"
-  - Move with WASD, click to place towers. Upgrade and sell towers with a click.
-    Defend against waves to protect the castle!
---- !u!114 &2799616693103623571
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 333850916051981382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ad2a95028a60bc4c893f45e732b7577, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: {fileID: 2799616693103623580}
+  - Move with WASD, click to place towers. Upgrade and sell towers by clicking on
+    the tower. Press shift to view the towers radius. Defend against waves to protect
+    the castle!
 --- !u!1 &681794253844981123
 GameObject:
   m_ObjectHideFlags: 0
@@ -147,7 +135,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hello adventurer
+  m_text: 'Warrior: Whats that sound...?'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -306,6 +294,7 @@ GameObject:
   - component: {fileID: 2843222590707955879}
   - component: {fileID: 1291668420042262021}
   - component: {fileID: 3553028644464637703}
+  - component: {fileID: 2774643571373645841}
   m_Layer: 5
   m_Name: Continue
   m_TagString: Untagged
@@ -416,6 +405,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 2774643571373645841}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 3209787534245726748}
         m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
         m_MethodName: DisplayNextSentence
@@ -428,6 +429,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2774643571373645841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2035401312996093007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ad2a95028a60bc4c893f45e732b7577, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: {fileID: 2799616693103623580}
 --- !u!1 &5233767620018239071
 GameObject:
   m_ObjectHideFlags: 0

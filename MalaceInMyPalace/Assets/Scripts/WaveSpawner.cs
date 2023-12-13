@@ -22,6 +22,7 @@ public class WaveSpawner : MonoBehaviour
     private float countdown = 2f;
 
     private float searchCountdown = 1f;
+    public bool dialogueFinished = false;
 
     private SpawnState state = SpawnState.COUNTING;
 
@@ -95,6 +96,7 @@ public class WaveSpawner : MonoBehaviour
 
     void WaveCompleted()
     {
+        
         state = SpawnState.COUNTING;
         countdown = timeBetweenWaves;
         PlayerStats.Money += 50;
@@ -113,8 +115,10 @@ public class WaveSpawner : MonoBehaviour
         }
         else
         {
+
             nextWave++;
             PlayerStats.Rounds++;
+ 
         }
 
     }
@@ -137,6 +141,11 @@ public class WaveSpawner : MonoBehaviour
 
     IEnumerator SpawnWave(Wave _wave)
     {
+        // wait for dialogue to finish
+        if (!dialogueFinished)
+        {
+            yield break;
+        }
         Debug.Log("Spawning Wave: " + _wave.name);
         state = SpawnState.SPAWNING;
 

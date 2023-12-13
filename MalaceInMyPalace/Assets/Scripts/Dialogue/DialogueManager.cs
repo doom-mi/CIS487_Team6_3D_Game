@@ -43,6 +43,8 @@ public class DialogueManager : MonoBehaviour
     {
 
         DialogueBox.SetActive(false);
+        FindObjectOfType<WaveSpawner>().dialogueFinished = true;
+
         return;
     }
 

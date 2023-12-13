@@ -8,7 +8,6 @@ public class GameplayManager : MonoBehaviour {
     public static bool gameEnd = false;
     public GameObject gameOverScreen;
     public GameObject buyMenuUI;
-    public DialogueTrigger dialogueInit;
 
     void Update() {
         if (gameEnd == true) { return; }
@@ -21,7 +20,6 @@ public class GameplayManager : MonoBehaviour {
     void Start() 
     {
         gameEnd = false;
-        dialogueInit.TriggerDialogue();
     }
 
     void EndGame() {
