@@ -9,7 +9,8 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioSource SFXSource;
 
     [Header("------Audio Clip-------")]
-    public AudioClip background;
+    public AudioClip Level1;
+    public AudioClip Level2;
     public AudioClip mainMenuMusic;
     public AudioClip CannonFire;
     public AudioClip ArrowFire;

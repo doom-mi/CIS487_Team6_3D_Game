@@ -11,7 +11,10 @@ public class GameOver : MonoBehaviour
 
     void OnEnable()
     {
+        if(roundsText != null)
+        {
         roundsText.text = PlayerStats.Rounds.ToString();
+        }
     }
     public void GoToMainMenu()
     {

@@ -9,6 +9,10 @@ public class cameramovement : MonoBehaviour
     public float rightClickMovementSpeed = 10.0f; // Adjust this to set the movement speed while holding right click
     public float minY = 2.0f; // Minimum Y-axis position for zoom
     public float maxY = 10.0f; // Maximum Y-axis position for zoom
+    public float minX = -10.0f; // Minimum X-axis position
+    public float maxX = 10.0f; // Maximum X-axis position
+    public float minZ = -10.0f; // Minimum Z-axis position
+    public float maxZ = 10.0f; // Maximum Z-axis position
     private bool isMovingWithRightClick = false;
 
     void Update()
@@ -51,6 +55,24 @@ public class cameramovement : MonoBehaviour
 
         // Move the camera along the X-axis based on the direction and speed
         transform.Translate(xMoveDirection.normalized * movementSpeed * Time.deltaTime, Space.World);
+
+        // Constrain X-axis position within the specified range
+        float newX = Mathf.Clamp(transform.position.x, minX, maxX);
+
+        // Update the position only if it's within the allowed range
+        if (newX != transform.position.x)
+        {
+            transform.position = new Vector3(newX, transform.position.y, transform.position.z);
+        }
+
+        // Constrain Z-axis position within the specified range
+        float newZ = Mathf.Clamp(transform.position.z, minZ, maxZ);
+
+        // Update the position only if it's within the allowed range
+        if (newZ != transform.position.z)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, newZ);
+        }
     }
 
     void ZoomCamera()
