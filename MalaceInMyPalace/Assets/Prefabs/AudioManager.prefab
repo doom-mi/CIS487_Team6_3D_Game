@@ -48,7 +48,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSource: {fileID: 4753662544276414885}
   SFXSource: {fileID: 4753662543666661086}
-  background: {fileID: 8300000, guid: 1bebd710a99a8a54480d9084196f4c9f, type: 3}
+  Level1: {fileID: 8300000, guid: 1bebd710a99a8a54480d9084196f4c9f, type: 3}
+  Level2: {fileID: 8300000, guid: 96042294100628b4297eace20bf2fa51, type: 3}
   mainMenuMusic: {fileID: 8300000, guid: fa29c69b19d659b40b97257ff558c688, type: 3}
   CannonFire: {fileID: 8300000, guid: af2b63697fd97e847832ebbfe18dc75a, type: 3}
   ArrowFire: {fileID: 8300000, guid: 075d7e82b3c0f034695ac9d87324bb72, type: 3}

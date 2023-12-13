@@ -84,6 +84,12 @@ private void SaveSFXVolume()
         SceneManager.LoadScene("DomsNewScene");
     }
 
+           public void LoadLevel2()
+    {
+        SceneManager.LoadScene("Kyle");
+    }
+
+
     public void Quit()
     {
         Application.Quit();
