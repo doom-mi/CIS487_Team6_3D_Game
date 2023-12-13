@@ -15,38 +15,36 @@ PrefabInstance:
     - target: {fileID: 2799616693103623580, guid: cbe15121020224d45a8a740e62a924bf,
         type: 3}
       propertyPath: sentences.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2799616693103623580, guid: cbe15121020224d45a8a740e62a924bf,
         type: 3}
       propertyPath: sentences.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799616693103623580, guid: cbe15121020224d45a8a740e62a924bf,
+        type: 3}
+      propertyPath: sentences.Array.data[1]
       value: 'King: Defender, the enemy alters our land, creating obstacles. Adapt
         our defenses to this transformed terrain.'
       objectReference: {fileID: 0}
     - target: {fileID: 2799616693103623580, guid: cbe15121020224d45a8a740e62a924bf,
         type: 3}
-      propertyPath: sentences.Array.data[1]
+      propertyPath: sentences.Array.data[2]
       value: 'Warrior: Their changes won''t hinder us. I''ll use it to channel their
         advance and fortify our positions.'
       objectReference: {fileID: 0}
     - target: {fileID: 2799616693103623580, guid: cbe15121020224d45a8a740e62a924bf,
         type: 3}
-      propertyPath: sentences.Array.data[2]
+      propertyPath: sentences.Array.data[3]
       value: 'King: Your adaptability is crucial. Turn their alterations into our
         advantage, safeguarding our realm.'
       objectReference: {fileID: 0}
     - target: {fileID: 2799616693103623580, guid: cbe15121020224d45a8a740e62a924bf,
         type: 3}
-      propertyPath: sentences.Array.data[3]
+      propertyPath: sentences.Array.data[4]
       value: 'Warrior: I''ll outwit them, using their changes against them. Our kingdom
         remains unconquered.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 2799616693103623580, guid: cbe15121020224d45a8a740e62a924bf,
-        type: 3}
-      propertyPath: sentences.Array.data[4]
-      value: 'Warrior: Fear not, Your Majesty. With innovation and perseverance,
-        I shall turn their own alterations against them. Together, we shall ensure
-        our kingdom remains unconquered.'
       objectReference: {fileID: 0}
     - target: {fileID: 2799616693103623580, guid: cbe15121020224d45a8a740e62a924bf,
         type: 3}
